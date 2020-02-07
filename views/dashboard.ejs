@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Futute Processing</title>
+    <script src="https://kit.fontawesome.com/25c2fb81be.js" crossorigin="anonymous"></script>
+    <link href="/public/assets/styles.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <div class="parent">
+
+        <div class="div1">
+            <p class="h3  p-2 ">
+                Exchange
+                <a href="/users/logout">
+                    <span class="fas fa-power-off float-right" data-inline="false"></span>
+                </a>
+                <a href="">
+                    <i class="fas fa-cog float-right"></i>
+                </a>
+                <a class="logged float-right">Logged in as <%= name %></a>
+
+            </p>
+        </div>
+
+        <div class="div2"></div>
+
+        <!-- CURRENCIES -->
+        <div class="div3">
+            <p class="cell-v">Currenices</p>
+        </div>
+        <div class="div4">
+            <p class="cell-v">Currency</p>
+        </div>
+        <div class="div5">
+            <p class="cell-v">Unit</p>
+        </div>
+        <div class="div6">
+            <p class="cell-v">Value</p>
+        </div>
+        <div class="div7">
+            <p class="cell-v">Actions</p>
+        </div>
+        <div class="div8 gbp">
+            <p class="cell-v">GBP</p>
+        </div>
+        <div class="div9 gbp-unit">
+            <p class="cell-v"><%= gbpUnit %></p>
+        </div>
+        <div class="div10 gbp-value">
+            <p class="cell-v"><%= gbpPriceFloor %></p>
+        </div>
+        <div class="div11 gbp-actions">
+            <button class="button">Buy</button>
+        </div>
+        <div class="div12 eur">
+            <p class="cell-v">EUR</p>
+        </div>
+        <div class="div13 eur-unit">
+            <p class="cell-v"><%= eurUnit %> </p>
+        </div>
+        <div class="div14 eur-value">
+            <p class="cell-v"><%= eurPriceFloor %></p>
+        </div>
+        <div class="div15 eur-actions">
+            <button class="button">Buy</button>
+        </div>
+        <div class="div16 usd">
+            <p class="cell-v">USD</p>
+        </div>
+        <div class="div17 usd-unit">
+            <p class="cell-v"><%= usdUnit %></p>
+        </div>
+        <div class="div18 usd-value">
+            <p class="cell-v"><%= usdPriceFloor %></p>
+        </div>
+        <div class="div19 usd-actions">
+            <button class="button">Buy</button>
+        </div>
+        <div class="div20 czk">
+            <p class="cell-v">CZK</p>
+        </div>
+        <div class="div21 czk-unit">
+            <p class="cell-v"><%= czkUnit %></p>
+        </div>
+        <div class="div22 czk-value">
+            <p class="cell-v"><%= czkPriceFloor %></p>
+        </div>
+        <div class="div23 czk-actions">
+            <button class="button">Buy</button>
+        </div>
+        <div class="div24"></div>
+        <div class="div25"></div>
+
+
+        <!-- MY WALLET -->
+        <div class="div26">
+            <p class="cell-v">My wallet</p>
+        </div>
+        <div class="div27">
+            <p class="cell-v">Currency</p>
+        </div>
+        <div class="div28">
+            <p class="cell-v">Unit price</p>
+        </div>
+        <div class="div29">
+            <p class="cell-v">Amount</p>
+        </div>
+        <div class="div30">
+            <p class="cell-v">Value</p>
+        </div>
+        <div class="div31">
+            <p class="cell-v">Actions</p>
+        </div>
+        <div class="div32 gbp">
+            <p class="cell-v">GBP</p>
+        </div>
+        <div class="div33 gbp-unit-price">
+            <p class="cell-v"><%= gbpPriceFloor %></p>
+        </div>
+        <div class="div34 gbp-amount">
+            <p class="cell-v"><%= gbp_capital %></p>
+        </div>
+        <div class="div35 gbp-value">
+            <p class="cell-v"><%= gbpPriceFloor * gbp_capital %></p>
+        </div>
+        <div class="div36 gbp-actions">
+            <button class="button">Sell</button>
+        </div>
+        <div class="div37 eur">
+            <p class="cell-v">EUR</p>
+        </div>
+        <div class="div38 eur-unit-price">
+            <p class="cell-v"><%= eurPriceFloor %></p>
+        </div>
+        <div class="div39 eur-amount">
+            <p class="cell-v"><%= eur_capital %></p>
+        </div>
+        <div class="div40 eur-value">
+            <p class="cell-v"><%= eurPriceFloor * eur_capital %></p>
+        </div>
+        <div class="div41 eur-actions">
+            <button class="button">Sell</button>
+        </div>
+        <div class="div42 usd">
+            <p class="cell-v">USD</p>
+        </div>
+        <div class="div43 usd-unit-price">
+            <p class="cell-v"><%= usdPriceFloor %></p>
+        </div>
+        <div class="div44 usd-amount">
+            <p class="cell-v"><%= usd_capital %></p>
+        </div>
+        <div class="div45 usd-value">
+            <p class="cell-v"><%= usdPriceFloor * usd_capital %></p>
+        </div>
+        <div class="div46 usd-actions">
+            <button class="button">Sell</button>
+        </div>
+        <div class="div47 czk">
+            <p class="cell-v">CZK</p>
+        </div>
+        <div class="div48 czk-unit-price">
+            <p class="cell-v"><%= czkPriceFloor %></p>
+        </div>
+        <div class="div49 czk-amount">
+            <p class="cell-v"><%= czk_capital %></p>
+        </div>
+        <div class="div50 czk-value">
+            <p class="cell-v"><%= czkPriceFloor * (czk_capital * 0.01) %></p>
+        </div>
+        <div class="div51 czk-actions">
+            <button class="button">Sell</button>
+        </div>
+        <div class="div52"></div>
+        <div class="div53 available-capital">
+            <p class="cell-v">Available PLN: <%= pln_capital %> </p>
+        </div>
+    </div>
+
+</body>
+
+</html>

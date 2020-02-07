@@ -1,0 +1,374 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+
+}
+
+body {
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: large;
+}
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(14, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+
+    height: 100vh;
+    margin: 0;
+    }
+    
+    .div1 {
+        grid-area: 2 / 2 / 3 / 12;
+        background-color: white;
+        border: solid black 1px;
+    }
+
+    .div2 { grid-area: 3 / 2 / 4 / 12; }
+
+    .div3 {
+        grid-area: 4 / 2 / 5 / 6;
+        background-color: white;
+        border: solid black 1px;
+     }
+
+    .div4 { 
+        grid-area: 5 / 2 / 6 / 3;
+        background-color: lightgrey;
+        border: solid black 1px;
+        border-top: none;
+        border-right: none;
+    }
+
+    .div5 { 
+        grid-area: 5 / 3 / 6 / 4;
+        background-color: lightgrey;
+        border: solid black 1px;
+        border-top: none;
+        border-right: none;
+    }
+
+    .div6 {
+        grid-area: 5 / 4 / 6 / 5;
+        background-color: lightgrey;
+        border: solid black 1px;
+        border-top: none;
+        border-right: none;
+    }
+
+    .div7 { 
+        grid-area: 5 / 5 / 6 / 6;
+        background-color: lightgrey;
+        border: solid black 1px;
+        border-top: none;
+    }
+
+    .div8 { grid-area: 6 / 2 / 7 / 3; }
+    .div9 { grid-area: 6 / 3 / 7 / 4; }
+    .div10 { grid-area: 6 / 4 / 7 / 5; }
+    .div11 { grid-area: 6 / 5 / 7 / 6; }
+    .div12 { grid-area: 7 / 2 / 8 / 3; }
+    .div13 { grid-area: 7 / 3 / 8 / 4; }
+    .div14 { grid-area: 7 / 4 / 8 / 5; }
+    .div15 { grid-area: 7 / 5 / 8 / 6; }
+    .div16 { grid-area: 8 / 2 / 9 / 3; }
+    .div17 { grid-area: 8 / 3 / 9 / 4; }
+    .div18 { grid-area: 8 / 4 / 9 / 5; }
+    .div19 { grid-area: 8 / 5 / 9 / 6; }
+    .div20 { grid-area: 9 / 2 / 10 / 3; }
+    .div21 { grid-area: 9 / 3 / 10 / 4; }
+    .div22 { grid-area: 9 / 4 / 10 / 5; }
+    .div23 { grid-area: 9 / 5 / 10 / 6; }
+    .div24 { 
+        grid-area: 10 / 2 / 11 / 6;
+        background-color: white;
+        border: solid black 1px;
+    }
+
+    .div25 { 
+        grid-area: 11 / 2 / 14 / 6; 
+        background-color: white;
+        border: solid black 1px;
+        border-top: none;
+    }
+
+    .div26 { 
+        grid-area: 4 / 7 / 5 / 12;
+        background-color: white;
+        border: solid black 1px;
+    }
+
+    .div27 { 
+        grid-area: 5 / 7 / 6 / 8;
+        background-color: lightgrey;
+        border: solid black 1px;
+        border-top: none;
+        border-right: none;
+    }
+
+    .div28 { 
+        grid-area: 5 / 8 / 6 / 9;
+        background-color: lightgrey;
+        border: solid black 1px;
+        border-top: none;
+        border-right: none;
+    }
+
+    .div29 {
+        grid-area: 5 / 9 / 6 / 10;
+        background-color: lightgrey;
+        border: solid black 1px;
+        border-top: none;
+        border-right: none;
+    }
+
+    .div30 {
+        grid-area: 5 / 10 / 6 / 11;
+        background-color: lightgrey;
+        border: solid black 1px;
+        border-top: none;
+        border-right: none;
+    }
+
+    .div31 {
+        grid-area: 5 / 11 / 6 / 12; 
+        background-color: lightgrey;
+        border: solid black 1px;
+        border-top: none;
+    }
+
+    .div32 { grid-area: 6 / 7 / 7 / 8; }
+    .div33 { grid-area: 6 / 8 / 7 / 9; }
+    .div34 { grid-area: 6 / 9 / 7 / 10; }
+    .div35 { grid-area: 6 / 10 / 7 / 11; }
+    .div36 { grid-area: 6 / 11 / 7 / 12; }
+    .div37 { grid-area: 7 / 7 / 8 / 8; }
+    .div38 { grid-area: 7 / 8 / 8 / 9; }
+    .div39 { grid-area: 7 / 9 / 8 / 10; }
+    .div40 { grid-area: 7 / 10 / 8 / 11; }
+    .div41 { grid-area: 7 / 11 / 8 / 12; }
+    .div42 { grid-area: 8 / 7 / 9 / 8; }
+    .div43 { grid-area: 8 / 8 / 9 / 9; }
+    .div44 { grid-area: 8 / 9 / 9 / 10; }
+    .div45 { grid-area: 8 / 10 / 9 / 11; }
+    .div46 { grid-area: 8 / 11 / 9 / 12; }
+    .div47 { grid-area: 9 / 7 / 10 / 8; }
+    .div48 { grid-area: 9 / 8 / 10 / 9; }
+    .div49 { grid-area: 9 / 9 / 10 / 10; }
+    .div50 { grid-area: 9 / 10 / 10 / 11; }
+    .div51 { grid-area: 9 / 11 / 10 / 12; }
+    .div52 { 
+        grid-area: 10 / 7 / 11 / 12;
+        background-color: white;
+        border: solid black 1px;
+    }
+
+    .div53 { 
+        grid-area: 11 / 7 / 12 / 12;
+        background-color: white;
+        border: solid black 1px;
+    }
+
+    .button{
+        position: relative;
+        left: 20%;
+        border: solid black;
+        border-radius: 9%;
+        width: 60%;
+        height: 50%;
+        margin: 5px;
+        background-color: lightgray;
+        font-size: 13px;
+
+    }
+
+    .icons{
+        float: right;
+        margin-top: 10px;
+        margin-right: 5px;
+    }
+
+
+    .fas{
+        margin-top: 1%;
+        margin-right: 10px;
+        text-decoration: none;
+        color: black;
+    }
+
+    .logged {
+        font-size: 15px;
+        margin-top: 1.5%;
+        margin-right: 10px;
+        align-self: baseline;
+    }
+
+
+    /* GBP */
+
+    .gbp {
+        border: solid black 1px;
+        border-top: none;
+        border-right: none;     
+    }
+
+    .gbp-unit {
+        border: solid black 1px;
+        border-top: none;
+        border-right: none;
+    }
+
+    .gbp-unit-price {
+        border: solid black 1px;
+        border-top: none;
+        border-right: none;
+    }
+
+    .gbp-amount {
+        border: solid black 1px;
+        border-top: none;
+        border-right: none;
+    }
+
+    .gbp-value {
+        border: solid black 1px;
+        border-top: none;
+        border-right: none;
+    }
+
+    .gbp-actions {
+        border: solid black 1px;
+        border-top: none;
+    }
+
+    /* EUR */
+
+    .eur {
+        border: solid black 1px;
+        border-top: none;
+        border-right: none;
+    }
+
+    .eur-unit {
+        border: solid black 1px;
+        border-top: none;
+        border-right: none;
+    }
+
+    .eur-unit-price {
+        border: solid black 1px;
+        border-top: none;
+        border-right: none;
+    }
+
+    .eur-amount {
+        border: solid black 1px;
+        border-top: none;
+        border-right: none;
+    }
+
+    .eur-value {
+        border: solid black 1px;
+        border-top: none;
+        border-right: none;
+    }
+
+    .eur-actions {
+        border: solid black 1px;
+        border-top: none;
+    }
+
+
+    /* USD */
+
+    .usd {
+        border: solid black 1px;
+        border-top: none;
+        border-right: none;
+    }
+
+    .usd-unit {
+        border: solid black 1px;
+        border-top: none;
+        border-right: none;
+    }
+
+    .usd-unit-price {
+        border: solid black 1px;
+        border-top: none;
+        border-right: none;
+    }
+
+    .usd-amount {
+        border: solid black 1px;
+        border-top: none;
+        border-right: none;
+    }
+
+    .usd-value {
+        border: solid black 1px;
+        border-top: none;
+        border-right: none;
+    }
+
+    .usd-actions {
+        border: solid black 1px;
+        border-top: none;
+    }
+
+
+    /* CZK */
+
+    .czk {
+        border: solid black 1px;
+        border-top: none;
+        border-right: none;
+        border-bottom: none;
+    }
+
+    .czk-unit {
+        border: solid black 1px;
+        border-top: none;
+        border-right: none;
+        border-bottom: none;
+    }
+
+    .czk-unit-price { 
+        border: solid black 1px;
+        border-top: none;
+        border-right: none;
+        border-bottom: none;
+    }
+
+    .czk-amount {
+        border: solid black 1px;
+        border-top: none;
+        border-right: none;
+        border-bottom: none;
+    }
+
+    .czk-value {
+        border: solid black 1px;
+        border-top: none;
+        border-right: none;
+        border-bottom: none;       
+
+    }
+
+    .czk-actions {
+        border: solid black 1px;
+        border-top: none;
+        border-bottom: none;
+    }
+
+    .cell-v {
+        margin-top: 5px;
+       margin-left: 5px;
+    }
+
+    .available-capital {
+        border-top: none;
+    }
