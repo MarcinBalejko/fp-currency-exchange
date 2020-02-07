@@ -67,8 +67,6 @@ function getFlooredFixed(v, d) {
 }
 
 function getResponse() {
-
-
     fetch('http://webtask.future-processing.com:8068/currencies', {
         "Accept": "application/json"
     })
@@ -97,11 +95,17 @@ function getResponse() {
             app.locals.usdUnit = JSON.stringify(data.items[0].unit);
 
             app.locals.czkUnit = JSON.stringify(data.items[4].unit);
-
         })
 }
 
 getResponse();
+
+const requestLoop = setInterval(function () {
+    getResponse();
+
+}, 30000);
+
+
 
 
 

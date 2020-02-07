@@ -12,7 +12,7 @@
     <link href="/public/assets/styles.css" rel="stylesheet" type="text/css" />
 </head>
 
-<body>
+<body onload="JavaScript:AutoRefresh(30000);">
     <div class="parent">
 
         <div class="div1">
@@ -183,6 +183,13 @@
             <p class="cell-v">Available PLN: <%= pln_capital %> </p>
         </div>
     </div>
+
+
+    <script type="text/JavaScript">
+           function AutoRefresh( t ) {
+              setTimeout("location.reload(true);", t);
+           }    
+     </script>
 
 </body>
 
